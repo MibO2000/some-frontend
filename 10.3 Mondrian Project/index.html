@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0%;
+    }
+
+    .white {
+      background-color: #F0F1EC;
+    }
+
+    .blue {
+      background-color: #004592;
+    }
+
+    .red {
+      background-color: #E72F24;
+    }
+
+    .black {
+      background-color: #232629;
+    }
+
+    .yellow {
+      background-color: #F9D01E;
+    }
+
+    .gap-9 {
+      gap: 9px;
+    }
+
+    .border {
+      background-color: #000;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-rows: 414px 325px;
+      grid-template-columns: 320px 419px;
+    }
+
+    .three {
+      display: grid;
+      grid-template-rows: 295px auto;
+    }
+
+    .four {
+      display: grid;
+      grid-template-columns: 360px auto;
+      grid-template-rows: 295px auto;
+    }
+
+    .four-two {
+      grid-area: span 2;
+      display: grid;
+      grid-template-rows: 130px auto;
+      gap: 10px;
+    }
+
+    .four-three {
+      display: grid;
+      grid-template-columns: 198px auto;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="border">
+    <div class="grid gap-9">
+      <div class="one red"></div>
+      <div class="two white"></div>
+      <div class="three gap-9">
+        <div class="white"></div>
+        <div class="white"></div>
+      </div>
+      <div class="four gap-9">
+        <div class="four-one white"></div>
+        <div class="four-two">
+          <div class="blue"></div>
+          <div class="white"></div>
+        </div>
+        <div class="four-three gap-9  ">
+          <div class="yellow"></div>
+          <div class="black"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
